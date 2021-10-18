@@ -1,0 +1,31 @@
+@import '../../../styles.scss';
+
+.main {
+  background: black;
+  height: 100%;
+
+  &-inner {
+    background: black;
+    max-width: 40rem !important;
+
+    &-primary {
+      background-color: #119afb;
+      color: black;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    &-secondary {
+      background-color: black;
+      color: #119afb;
+      border: 1px solid #119afb;
+    }
+
+    &-text {
+      color: white;
+    }
+  }
+}

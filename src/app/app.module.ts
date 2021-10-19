@@ -13,10 +13,15 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { HttpClientModule } from "@angular/common/http";
+
 import { environment } from '../environments/environment';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HeaderComponent } from './components/home/header/header.component';
+import { SiderightComponent } from './components/home/sideright/sideright.component';
+import { SideleftComponent } from './components/home/sideleft/sideleft.component';
+import { TweetsComponent } from './components/home/tweets/tweets.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     LandingComponent,
     SignupComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    SiderightComponent,
+    SideleftComponent,
+    TweetsComponent,
+
   ],
   imports: [
     BrowserModule,

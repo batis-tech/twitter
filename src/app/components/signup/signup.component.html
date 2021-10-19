@@ -2,9 +2,9 @@
   <form #form="ngForm" (ngSubmit)="onSubmit(form)">
     <h1 class="mb-8 text-3xl text-center">Sign up</h1>
     <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
-    <input type="text" required ngModel name="name" class="block border border-grey-light w-full p-3 rounded mb-4" name="fullname" placeholder="Full Name" />
+    <input type="text" required ngModel  class="block border border-grey-light w-full p-3 rounded mb-4" name="fullname" placeholder="Full Name" />
 
-    <input type="text" required  #email="ngModel" ngModel name="email" class="block border border-grey-light w-full p-3 rounded mb-4" name="email" placeholder="Email" />
+    <input type="text" required  #email="ngModel" ngModel  class="block border border-grey-light w-full p-3 rounded mb-4" name="email" placeholder="Email" />
     <span class="red" class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
     <input type="password" required ngModel class="block border border-grey-light w-full p-3 rounded mb-4" name="password" placeholder="Password" />
   </div>

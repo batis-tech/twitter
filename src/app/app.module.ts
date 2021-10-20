@@ -22,6 +22,7 @@ import { HeaderComponent } from './components/home/header/header.component';
 import { SiderightComponent } from './components/home/sideright/sideright.component';
 import { SideleftComponent } from './components/home/sideleft/sideleft.component';
 import { TweetsComponent } from './components/home/tweets/tweets.component';
+import { TweetComponent } from './components/home/tweet/tweet.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TweetsComponent } from './components/home/tweets/tweets.component';
     SiderightComponent,
     SideleftComponent,
     TweetsComponent,
+    TweetComponent,
 
   ],
   imports: [
@@ -45,7 +47,8 @@ import { TweetsComponent } from './components/home/tweets/tweets.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),  // imports firebase/app needed for everything
-    AngularFirestoreModule,                                 // imports firebase/firestore, only needed for database features
+    AngularFirestoreModule, 
+    AngularFireDatabaseModule, // imports firebase/firestore, only needed for database features
     // AngularFireStorageModule,                               // imports firebase/storage only needed for storage features
     AngularFireDatabaseModule,
     HttpClientModule,

@@ -17,11 +17,11 @@ export class SignupComponent implements OnInit {
   constructor(private dataService:DataService,private router: Router,public dialogRef: MatDialogRef<SignupComponent>) { }
 
   ngOnInit(): void {
-    if (this.dataService.SignIn) {                       // if the user's logged in, navigate them to the dashboard (NOTE: don't use afAuth.currentUser -- it's never null)
-            this.router.navigate(['home']);
-        }else{
-          this.router.navigate(['landing']);
-        }
+    // if (this.dataService.SignIn) {                       // if the user's logged in, navigate them to the dashboard (NOTE: don't use afAuth.currentUser -- it's never null)
+    //         this.router.navigate(['home']);
+    //     }else{
+    //       this.router.navigate(['landing']);
+    //     }
   }
   onSubmit(form: NgForm){
     const data = form.value.userData;
@@ -35,7 +35,6 @@ export class SignupComponent implements OnInit {
       }else if(result.isValid == false){
         this.firebaseErrorMessage = result.message;
         this.dialogRef.close();
-
       }
     }).catch(()=>{
       console.log('signup went wrong');

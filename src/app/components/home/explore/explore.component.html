@@ -1,0 +1,121 @@
+<div class="absolute w-3/5 mr-2">
+  <mat-tab-group class="w-6/6 ">
+    <mat-tab label="For you" class="w-1/5 text-white">
+      <div *ngFor="let data of data">
+        <div class=" w-full lg:max-w-full mr-4">
+          <div style="background: black;color:white;border-top:none"
+            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full mr-4"
+                src="{{ data.image }}"
+                alt="Avatar of Jonathan Reinink">
+              <div class="text-sm">
+                <p class="font-black text-white leading-none">{{ data.name }}</p>
+                <p class="font-black text-white">{{ data.tweet }}</p>
+              </div>
+            </div>
+            <small class="text-right">{{ data.time }}</small>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Trending" class="w-1/5 text-white">
+      <div class=" w-full lg:max-w-full mr-4">
+        <h1 class="text-white mt-3 font-black">Melbourne trends</h1>
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">1-Music.Trending</small>
+              <p class="font-black text-white leading-none -mb-2">HIKARU</p>
+              <small class="text-gray-700 ">40.9K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">2- Trending</small>
+              <p class="font-black text-white leading-none -mb-2">#MelbourneUnlocked</p>
+              <small class="text-gray-700 ">20.9K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">3-Trending</small>
+              <p class="font-black text-white leading-none -mb-2">Brandon Lee</p>
+              <small class="text-gray-700 ">12.9K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">4-Music.Trending</small>
+              <p class="font-black text-white leading-none -mb-2">GirlsPlanet999</p>
+              <small class="text-gray-700 ">429K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">5-Entertainment.Trending</small>
+              <p class="font-black text-white leading-none -mb-2">CriticalRoleSpoilers</p>
+              <small class="text-gray-700 ">49.9K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">6-News.Trending</small>
+              <p class="font-black text-white leading-none -mb-2">Candace Owens</p>
+              <small class="text-gray-700 ">4239K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+      <div class=" w-full lg:max-w-full mr-4">
+        <div style="background: black;color:white;border-top:none"
+          class=" border-t-0 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="flex items-center">
+            <div class="text-sm">
+              <small class="text-gray-700">7- Trending</small>
+              <p class="font-black text-white leading-none -mb-2">Tim Wilson</p>
+              <small class="text-gray-700 ">10.9K Tweets</small>
+            </div>
+          </div>
+          <small class="float-right"><img src="assets/menu.png" alt="" class="w-5 h-5 mr-1 float-right -mt-10"></small>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="COVID-19" class="w-1/5 text-white"> Content 3 </mat-tab>
+    <mat-tab label="News" class="w-1/5 text-white"> Content 4 </mat-tab>
+    <mat-tab label="Sports" class="w-1/5 text-white"> Content 5 </mat-tab>
+    <mat-tab label="Entertainment" class="w-1/5 text-white"> Content 6 </mat-tab>
+  </mat-tab-group>
+</div>

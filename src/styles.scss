@@ -5,3 +5,10 @@
 @import 'tailwindcss/utilities';
 html, body { height: 100%; background: black}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-tab-label {
+    width: 118px !important;
+    color:white !important;
+}
+.mat-tab-group.mat-primary .mat-ink-bar{
+    background-color: #1d9bf0 !important;
+}

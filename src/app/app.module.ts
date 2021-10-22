@@ -24,6 +24,10 @@ import { SideleftComponent } from './components/home/sideleft/sideleft.component
 import { TweetsComponent } from './components/home/tweets/tweets.component';
 import { TweetComponent } from './components/home/tweet/tweet.component';
 
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { ExploreComponent } from './components/home/explore/explore.component';
+
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +40,7 @@ import { TweetComponent } from './components/home/tweet/tweet.component';
     SideleftComponent,
     TweetsComponent,
     TweetComponent,
+    ExploreComponent,
 
   ],
   imports: [
@@ -52,6 +57,8 @@ import { TweetComponent } from './components/home/tweet/tweet.component';
     // AngularFireStorageModule,                               // imports firebase/storage only needed for storage features
     AngularFireDatabaseModule,
     HttpClientModule,
+    PickerModule,
+    MatTabsModule
 
   ],
   providers: [],

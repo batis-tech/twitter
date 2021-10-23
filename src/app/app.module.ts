@@ -28,6 +28,10 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart';
 import { ExploreComponent } from './components/home/explore/explore.component';
 
 import { MatTabsModule } from '@angular/material/tabs';
+import { NotificationsComponent } from './components/home/notifications/notifications.component';
+import { ProfileComponent } from './components/home/profile/profile.component';
+import { BookmarksComponent } from './components/home/bookmarks/bookmarks.component';
+import { ListComponent } from './components/home/list/list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +45,10 @@ import { MatTabsModule } from '@angular/material/tabs';
     TweetsComponent,
     TweetComponent,
     ExploreComponent,
+    NotificationsComponent,
+    ProfileComponent,
+    BookmarksComponent,
+    ListComponent,
 
   ],
   imports: [

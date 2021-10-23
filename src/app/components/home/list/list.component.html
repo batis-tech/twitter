@@ -1,0 +1,17 @@
+<div class="absolute w-4/5  h-20" style="background:black">
+  <h2 class="text-white">List of users</h2>
+  <div *ngFor="let user of users">
+    <div class=" w-4/5 lg:max-w-full ">
+      <div style="background: black;color:white;border-top:none"
+        class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4  flex-col justify-between leading-normal">
+        <div class="flex items-center">
+          <div class="text-sm">
+            <p class="font-black text-white leading-none">{{ user.fullname }}</p>
+          </div>
+        </div>
+        <a style="background: #14181c;color: white;"class="mr-10 -mt-8 float-right main-inner-nav-btn text-base  px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">-Follow</a>
+      </div>
+    </div>
+  </div>
+</div>

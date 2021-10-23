@@ -12,7 +12,7 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 })
 export class SideleftComponent implements OnInit {
   newUser:Observable<any>;
-  constructor(public afAuth: AngularFireAuth, private firestore: AngularFirestore,public dialog: MatDialog) {
+  constructor(public afAuth: AngularFireAuth, private firestore: AngularFirestore,public dialog: MatDialog,private  dataService:DataService) {
   this.newUser == null;
 }
 
@@ -22,11 +22,12 @@ export class SideleftComponent implements OnInit {
         if (newUser) {
             let emailLower = newUser.email!.toLowerCase();
             this.newUser = this.firestore.collection('users').doc(emailLower).valueChanges();
-            console.log(this.newUser);
-
         }
     });
  }
+ logout(){
+  this.dataService.logoutUser();
+}
 
  openDialog() {
    this.dialog.open(TweetComponent, {

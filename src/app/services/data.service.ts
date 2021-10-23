@@ -8,8 +8,8 @@ import { Router } from "@angular/router";
 })
 export class DataService {
   SignIn: boolean;
-  tweets:any[]=[];
-
+  tweets: any;
+  newUser: any;
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
     this.SignIn = false;
     this.afAuth.onAuthStateChanged((newUser) => {
@@ -54,11 +54,27 @@ export class DataService {
     //         return error;
     // });
   }
-  submitTweet(tweets:any){
+  loginUser(email: string, password: string): Promise<any> {
+    return this.afAuth.signInWithEmailAndPassword(email, password).then(() => {
+      console.log('Auth Service: loginUser: sucess');
+      this.router.navigate(['dashboard']);
+    })
+      // .catch(error => {
+      //   console.log('Auth Service: login error...');
+      //   console.log('erorr code', error.code);
+      //   console.log('error', error);
+      //   if (error.code)
+      //     return { isValid: false, message: error.message }
+      // });
+  }
+
+  submitTweet(tweets: any) {
     return this.afs.collection('/tweets/').add({
       tweet: tweets.tweet,
       email: tweets.email,
     });
-         console.log(tweets);
-}
+    console.log(tweets);
+  }
+
+
 }

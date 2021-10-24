@@ -5,7 +5,7 @@ This project was generated with Angular CLI version 12.1.3 and Firebase as a rea
 -Sign-up,sign-in.
 -Native media keyboard shortcuts.
 -Post Tweets
--Filters
+-Filters with emojis
 
 
 ## Development server
@@ -37,7 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <img width="1433" alt="Screen Shot 2021-10-23 at 5 34 36 PM" src="https://user-images.githubusercontent.com/57042884/138561084-b2e79803-8cf7-4eb1-8ee6-8a5848b7cdae.png">
 <img width="1430" alt="Screen Shot 2021-10-23 at 5 38 03 PM" src="https://user-images.githubusercontent.com/57042884/138561086-8b6830e6-849e-4c72-9e2c-fe6895e809b0.png">
 <img width="1433" alt="Screen Shot 2021-10-23 at 5 38 18 PM" src="https://user-images.githubusercontent.com/57042884/138561092-1e65eb41-e324-40be-a9b1-e2801a266bc9.png">
-
+<img width="1427" alt="Screen Shot 2021-10-24 at 11 34 41 AM" src="https://user-images.githubusercontent.com/57042884/138586564-a6ad3c9b-a667-4e05-bfd7-6e6d2c2fc02a.png">
 <img width="1433" alt="Screen Shot 2021-10-23 at 5 38 18 PM" src="https://user-images.githubusercontent.com/57042884/138561128-5a73ddce-fe8c-4497-93bb-bad039b85514.png">
 <img width="1431" alt="Screen Shot 2021-10-23 at 5 38 32 PM" src="https://user-images.githubusercontent.com/57042884/138561136-c45cbfaf-2f4b-4198-a0ef-5962e4708f55.png">
 <img width="1430" alt="Screen Shot 2021-10-23 at 5 38 47 PM" src="https://user-images.githubusercontent.com/57042884/138561139-a52db410-c63e-4c40-bb3f-401e29175884.png">

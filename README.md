@@ -1,8 +1,12 @@
 # Twitter
 
 This project was generated with Angular CLI version 12.1.3 and Firebase as a real-time NoSQL cloud database.
-## Featuers
-Sign-up,sign-in,Native media keyboard shortcuts,Post Tweets with emojis,Filters.
+
+# featuers
+- Sign-up,sign-in. 
+- Native media keyboard shortcuts.
+- Post Tweets with emojis
+- Filters
 
 
 ## Development server
